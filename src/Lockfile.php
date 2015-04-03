@@ -9,7 +9,7 @@ namespace UseThe;
 
 use Composer\Script\Event;
 
-$scold = <<<EOF
+$SCOLD = <<<EOF
 It appears you're trying to update the project dependencies.
 
         You're doing it wrong.
@@ -25,8 +25,9 @@ EOF;
 
 class Lockfile {
     static function Mmmkay(Event $event) {
+        global $SCOLD;
         if(count($event->getArguments()) === 0) {
-            echo $scold;
+            echo $SCOLD;
             exit(1);
         }
     }
