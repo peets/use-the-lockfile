@@ -22,7 +22,7 @@ First: include this project as a dependency:
         "url": "git@github.com:peets/use-the-lockfile"
     }],
     "require-dev": {
-        "peets/use-the-lockfile": "0.1.0"
+        "peets/use-the-lockfile": "0.1.1"
     }
 
 Then: hook the crashing script on pre-update:
