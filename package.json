@@ -1,0 +1,9 @@
+{
+    "name": "peets/use-the-lockfile",
+    "description": "Cause argument-less `composer update` to crash",
+    "license": "WTFPL",
+
+    "autoload": {
+        "psr-4": { "UseThe\\": "src/" }
+    }
+}
